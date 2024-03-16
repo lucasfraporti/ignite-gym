@@ -11,12 +11,14 @@
   "dependencies": {
     "@expo-google-fonts/roboto": "^0.2.3",
     "@expo/metro-runtime": "~3.1.3",
-    "expo": "~50.0.13",
+    "@gluestack-ui/themed-native-base": "^0.1.107-alpha2",
+    "expo": "^50.0.13",
     "expo-font": "~11.10.3",
     "expo-status-bar": "~1.11.1",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "react-native": "0.73.5",
+    "react-native-svg": "^13.4.0",
     "react-native-web": "~0.19.6"
   },
   "devDependencies": {
