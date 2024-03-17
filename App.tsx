@@ -1,14 +1,15 @@
 import { StatusBar } from 'react-native'
 import { NativeBaseProvider } from 'native-base'
-import { THEME } from 'src/theme'
-
 import {
   useFonts,
   Roboto_400Regular,
   Roboto_700Bold,
 } from '@expo-google-fonts/roboto'
+
+import { Routes } from './src/routes'
+
+import { THEME } from 'src/theme'
 import { Loading } from '@components/Loading'
-import { SignUp } from '@screens/SignUp'
 
 export default function App() {
   const [fontsLoaded] = useFonts({
@@ -24,7 +25,7 @@ export default function App() {
         // Translucent, se verdadeiro, faz com que a barra de status se torne transparente e o conteúdo do aplicativo pode ser exibido por baixo dela
         translucent
       />
-      {fontsLoaded ? <SignUp /> : <Loading />}
+      {fontsLoaded ? <Routes /> : <Loading />}
     </NativeBaseProvider>
   )
 }
